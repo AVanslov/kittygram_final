@@ -1,4 +1,3 @@
-# flake8: noqa
 import os
 from dotenv import load_dotenv
 from pathlib import Path
