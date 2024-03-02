@@ -12,7 +12,6 @@ SECRET_KEY = os.detenv('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = os.gotenv('ALLOWED_HOSTS').split()
-#'51.250.27.253', '127.0.0.1', 'localhost', 'kittygramforstady.ddns.net'
 
 INSTALLED_APPS = [
     'django.contrib.admin',
