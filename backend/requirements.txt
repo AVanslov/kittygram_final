@@ -8,5 +8,6 @@ psycopg2-binary==2.9.3
 Pillow==9.0.0
 pytest==6.2.4
 pytest-django==4.4.0
+python3-dotenv==0.19.2-1
 pytest-pythonpath==0.7.3
 PyYAML==6.0
