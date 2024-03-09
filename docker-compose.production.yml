@@ -15,6 +15,8 @@ services:
     env_file: .env
     volumes:
       - static:/backend_static
+    depends_on:
+      - db
   frontend:
     env_file: .env
     image: avanslov/kittygram_frontend
@@ -28,3 +30,6 @@ services:
       - 9000:80
     volumes:
       - static:/staticfiles/
+    depends_on:
+      - frontend
+      - backend
