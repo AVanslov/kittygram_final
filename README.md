@@ -1,5 +1,4 @@
 ![example event parameter](https://github.com/avanslov/kittygram_final/actions/workflows/main.yml/badge.svg?event=push)
-
 #  Как работать с репозиторием финального задания
 
 ## Что нужно сделать
