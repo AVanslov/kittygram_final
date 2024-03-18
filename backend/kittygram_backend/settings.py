@@ -7,13 +7,14 @@ load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = str(os.getenv('SECRET_KEY'))
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['158.160.16.147', '127.0.0.1', 'localhost', 'kittygramforstady.ddns.net']
+# ALLOWED_HOSTS = ['158.160.16.147', '127.0.0.1', 'localhost', 'kittygramforstady.ddns.net']
 
-# ALLOWED_HOSTS = list(str(os.getenv('ALLOWED_HOSTS')).split(','))
+ALLOWED_HOSTS = list((os.getenv('ALLOWED_HOSTS')).split(','))
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
