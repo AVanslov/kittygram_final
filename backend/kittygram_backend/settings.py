@@ -3,17 +3,17 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-# load_dotenv()
-project_folder = os.path.expanduser('kittygram_final/kittygram_backend')
-load_dotenv(os.path.join(project_folder, '.env'))
+load_dotenv()
+# project_folder = os.path.expanduser('kittygram_final/kittygram_backend')
+# load_dotenv(os.path.join(project_folder, '.env'))
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = str(os.getenv('SECRET_KEY'))
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = True
 
-ALLOWED_HOSTS = str(os.getenv('ALLOWED_HOSTS')).split(',')
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').split(' ')
 
 INSTALLED_APPS = [
     'django.contrib.admin',
