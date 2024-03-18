@@ -4,12 +4,12 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 # load_dotenv()
-project_folder = os.path.expanduser('~/kittygram_backend')
+project_folder = os.path.expanduser('kittygram_final/kittygram_backend')
 load_dotenv(os.path.join(project_folder, '.env'))
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = str(os.getenv('SECRET_KEY'))
 
 DEBUG = True
 
