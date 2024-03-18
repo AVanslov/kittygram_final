@@ -11,8 +11,6 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = True
 
-# ALLOWED_HOSTS = ['158.160.16.147', '127.0.0.1', 'localhost', 'kittygramforstady.ddns.net']
-
 ALLOWED_HOSTS = str(os.getenv('ALLOWED_HOSTS')).split(',')
 
 INSTALLED_APPS = [
