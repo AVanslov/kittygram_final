@@ -14,6 +14,7 @@ DEBUG = True
 # ALLOWED_HOSTS = ['158.160.16.147', '127.0.0.1', 'localhost', 'kittygramforstady.ddns.net']
 
 ALLOWED_HOSTS = list(str(os.getenv('ALLOWED_HOSTS')).split(','))
+raise ValueError('ALLOWED_HOSTS', ALLOWED_HOSTS)
 
 
 INSTALLED_APPS = [
